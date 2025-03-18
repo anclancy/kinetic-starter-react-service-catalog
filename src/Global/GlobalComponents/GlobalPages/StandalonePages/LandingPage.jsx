@@ -8,6 +8,6 @@ export const LandingPage = () => {
     // or if we want to have a landing page to select which demo to view?
     useEffect(() => {
         // use location replace so this page does not get added to browser history.
-        window.location.replace(`${window.location.href}service-portal`);
+        window.location.replace(`${window.location.href}sign-in`);
     },[])
 };          

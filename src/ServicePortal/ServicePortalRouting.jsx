@@ -6,6 +6,7 @@ import { ServiceCatalog } from "./ServicePortalPages/ServiceCatalog";
 import { ServPortSubmission } from "./ServicePortalPages/ServPortSubmission";
 import { ServPortService } from "./ServicePortalPages/ServPortService";
 
+
 // This component will handle routing for the base Kinetic bundle routes
 export const ServicePortalRouting = () => (
     <>
@@ -30,6 +31,7 @@ export const ServicePortalRouting = () => (
                 path='/service-catalog/:catalog'
                 element={<ServiceCatalog  />}
             />
+          
         </Routes>
     </>
 );

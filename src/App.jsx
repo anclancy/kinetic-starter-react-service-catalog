@@ -15,6 +15,7 @@ import { KineticPlatformRouting } from './Global/GlobalComponents/GlobalPages/Ki
 import { Footer } from './Global/GlobalComponents/Footer';
 import { BreadcrumbHandler } from './Global/GlobalComponents/Widgets/BreadcrumbHandler';
 import { ServicePortalRouting } from './ServicePortal/ServicePortalRouting';
+import { SignIn } from './sign-in/SignIn';
 
 export const App = ({ initialized, loggedIn, loginProps, timedOut }) => {
   const globalState = useContext(GlobalContext);
@@ -75,18 +76,23 @@ export const App = ({ initialized, loggedIn, loginProps, timedOut }) => {
               path='/login'
               element={<Login {...loginProps} />}
               exact
-            />
-
-            <Route  
-              path='/kapps/*'
-              element={<KineticPlatformRouting />}
-              exact
-            />
+            />          
             <Route  
               path='/service-portal/*'
               element={<ServicePortalRouting />}
               exact
             />
+             <Route  
+              path='/kapps/*'
+              element={<KineticPlatformRouting />}
+              exact
+            />
+             <Route  
+              path='/sign-in/*'
+              element={<SignIn />}
+              exact
+            />
+              
           </Routes>
         </>
       }

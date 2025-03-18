@@ -20,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <ContextWrappers>
               {/* Complete application */}
               <App {...kineticProps} />
+              
             </ContextWrappers>
         </HashRouter>
       )}
